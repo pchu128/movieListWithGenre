@@ -1,0 +1,59 @@
+.fa-th, .fa-bars {
+  pointer-events: none;
+}
+
+body {
+  background-color: #2d2d2d;
+  display: grid;
+  grid-template-columns: 150px auto;
+  grid-template-rows: 50px auto 50px;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "sidebar pagination";
+  color: #ababab;
+}
+
+.navbar {
+  grid-area: header;
+  background-color: #212121;
+}
+
+.navbar-brand, .nav-link {
+  color: #ababab;
+}
+
+.nav-link {
+  background-color: #212121;
+  width: 100px;
+  text-align: center;
+}
+
+.nav-side {
+  grid-area: sidebar;
+  margin: 47px 10px 0px 10px;
+  background-color: #212121;
+  padding: 1px;
+  height: 900px;
+}
+
+.flex-sm-fill {
+  margin: auto;
+  padding: 8px 0px;
+}
+
+.container {
+  grid-area: main;
+}
+
+.pagination {
+  justify-self: center;
+}
+
+.card {
+  background-color: #212121;
+}
+
+.list-group-item {
+  background-color: #212121;
+}
